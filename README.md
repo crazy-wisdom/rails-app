@@ -1,6 +1,11 @@
 # rails-app
 The purpose aims to provide a boilerplate by docker/docker-compose, rails, redis and postgresql.
 
+#### Features
+- ruby 2.7
+- rails 6
+
+
 #### Update nginx config
 ```
 cp rails-app-docker/docker/nginx/default.conf.example rails-app-docker/docker/nginx/default.conf
