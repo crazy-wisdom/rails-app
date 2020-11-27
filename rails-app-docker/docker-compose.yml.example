@@ -42,6 +42,7 @@ services:
       - "4500"
     command: bash -c "bin/start.sh" 
     # command: bash -c "tail -f /etc/hosts"
+    # command: bash -c "rails s -p 4500 -b '0.0.0.0'"
     volumes:
       - /your-dev/rails-app/server:/var/www:rw
       - /your-dev/rails-app/server/vendor/bundle/ruby/2.7.0:/usr/local/bundle:rw
