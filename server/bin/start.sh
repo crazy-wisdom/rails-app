@@ -3,7 +3,7 @@ set -e
 
 # Remove a potentially pre-existing server.pid for Rails.
 rm -f /var/www/tmp/pids/server.pid
-
+bundle install --path vendor/bundle
 rails s -p 4500 -b '0.0.0.0'
 # tail -f /etc/hosts
 

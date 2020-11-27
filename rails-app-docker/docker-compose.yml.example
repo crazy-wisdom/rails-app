@@ -10,7 +10,7 @@ services:
       - web
     volumes:
       - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
-      - /your/project/folder:/var/www:rw
+      - /your-dev/rails-app/server:/var/www:rw
     networks:
       default:
         aliases:
@@ -21,7 +21,7 @@ services:
       context: ./docker/postgres
       dockerfile: Dockerfile
     environment:
-      POSTGRES_DB: 'rails_app'
+      POSTGRES_DB: 'rails_app_development'
       POSTGRES_USER: 'root'
       POSTGRES_PASSWORD: ''
     ports:
@@ -43,8 +43,8 @@ services:
     command: bash -c "bin/start.sh" 
     # command: bash -c "tail -f /etc/hosts"
     volumes:
-      - /your/project/folder:/var/www:rw
-      - /your/project/folder/vendor/bundle/ruby/2.7.0:/usr/local/bundle:rw
+      - /your-dev/rails-app/server:/var/www:rw
+      - /your-dev/rails-app/server/vendor/bundle/ruby/2.7.0:/usr/local/bundle:rw
     ports:
       - "4500:4500"
     depends_on:
