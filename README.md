@@ -31,6 +31,11 @@ docker exec -ti rails-app-docker_web_1 /bin/sh
 bundle install --path vendor/bundle
 ```
 
+#### Start webpack dev
+```
+docker exec -ti rails-app-docker_web_1 /bin/sh
+./bin/webpack-dev-server
+```
 
 #### Done
 Enjoy [http://localhost:4500](http://localhost:4500)
