@@ -4,6 +4,8 @@ The purpose aims to provide a boilerplate by docker/docker-compose, rails, redis
 #### Features
 - ruby 2.7
 - rails 6
+- font-awesome 5
+- bootstrap 4
 
 
 #### Update nginx config
