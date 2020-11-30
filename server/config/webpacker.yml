@@ -74,6 +74,9 @@ development:
       'Access-Control-Allow-Origin': '*'
     watch_options:
       ignored: '**/node_modules/**'
+      # https://stackoverflow.com/questions/55053633/webpacker-not-compiling-live
+      # poll: 1000
+      # aggregate_timeout: 100
 
 
 test:
