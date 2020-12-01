@@ -41,6 +41,6 @@ docker exec -ti rails-app-docker_web_1 /bin/sh
 ```
 
 #### Done
-Enjoy [http://localhost:4500](http://localhost:4500)
-Test API [http://localhost:4500/api/v1/demos](http://localhost:4500/api/v1/demos)
+- Enjoy [http://localhost:4500](http://localhost:4500)
+- Test API [http://localhost:4500/api/v1/demos](http://localhost:4500/api/v1/demos)
 
