@@ -4,6 +4,9 @@ The purpose aims to provide a boilerplate by docker/docker-compose, rails, redis
 #### Features
 - ruby 2.7
 - rails 6
+- bootstrap 4
+- font-awesome 5
+
 
 
 #### Update nginx config
@@ -39,3 +42,5 @@ docker exec -ti rails-app-docker_web_1 /bin/sh
 
 #### Done
 Enjoy [http://localhost:4500](http://localhost:4500)
+Test API [http://localhost:4500/api/v1/demos](http://localhost:4500/api/v1/demos)
+
